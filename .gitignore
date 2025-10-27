@@ -32,6 +32,10 @@ airflow/*.pid
 airflow/airflow.cfg
 airflow/webserver_config.py
 
+pipelines/__pycache__
+
+mlruns/
+
 .vscode/
 .idea/
 *.swp

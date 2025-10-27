@@ -47,7 +47,7 @@ class DataPreprocessor:
         numerical_columns = X.select_dtypes(include=['float64', 'int64']).columns.tolist()
         print(f"Numerical columns to scale: {numerical_columns}")
 
-        X[numerical_columns] = self.scaler.fit_transform(x[numerical_columns])
+        X[numerical_columns] = self.scaler.fit_transform(X[numerical_columns])
         return X, y
     
 
